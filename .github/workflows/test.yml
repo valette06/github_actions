@@ -13,5 +13,19 @@ jobs:
        run: |
          node -v
          pwd
+         npm install -g bats
+         bats -v 
 
+     - name: actions checkout
+       uses: actions/checkout@v2
+     - name: actions setup
+       uses: actions/setup-node@v2
+       with:
+         node-version: '14'
+    
+    
+
+       
+    
+          
           
