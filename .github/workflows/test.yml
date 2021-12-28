@@ -1,0 +1,17 @@
+name: shell commands
+
+on: [push]
+
+jobs:
+  run-shell-command:
+
+   runs-on: ubuntu-latest
+   steps:
+     - name: echo a string
+       run: echo "test github actions workflows"
+     - name: multiline script
+       run: |
+         node -v
+         pwd
+
+          
